@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.goldwind.com</groupId>
+    <artifactId>springboot-admin-ui-server</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!--  spring-boot-starter-parent  整合第三方常用框架依赖信息（各种引来信息）-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.2.RELEASE</version>
+    </parent>
+
+
+    <dependencies>
+        <!--  spring-boot-starter-web 是Spring Boot整合Spring MVC Web  -->
+        <!--  相当于把第三方常用Maven依赖信息，在parent项目中封装好了，使用Spring Boot提供依赖信息关联整合的Jar包 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--  支持admin-ui的关键配置  -->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
